@@ -1,0 +1,11 @@
+@import 'base';
+
+.tags {
+  margin-bottom: 25px;
+
+  .tallied-tags {
+    margin-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
