@@ -7,6 +7,12 @@ export default class CoreLayout extends React.Component {
     children : React.PropTypes.element
   }
 
+  componentDidMount () {
+    if (__CLIENT__ && window.mixpanel) {
+      window.mixpanel.track('Visit')
+    }
+  }
+
   render () {
     return (
       <div className='page-container'>
