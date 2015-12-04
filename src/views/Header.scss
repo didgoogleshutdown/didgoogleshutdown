@@ -1,0 +1,18 @@
+@import 'base';
+
+.header {
+  border-radius: 0;
+
+  .nav-links {
+    color: gray;
+
+    ul.list-inline li {
+      padding-top: 15px;
+
+      a {
+        color: gray;
+        padding-left: 20px;
+      }
+    }
+  }
+}

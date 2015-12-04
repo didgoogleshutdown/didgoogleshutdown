@@ -1,0 +1,22 @@
+@import 'base';
+
+.comments-editor {
+  clear: both;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+
+  .comment-field {
+    width: 100px !important;
+    flex-grow: 1;
+  }
+
+  .submit-button {
+    padding: 0 15px;
+    flex-grow: 0;
+    display: flex;
+    align-items: center;
+    color: $highlight;
+    cursor: pointer;
+  }
+}

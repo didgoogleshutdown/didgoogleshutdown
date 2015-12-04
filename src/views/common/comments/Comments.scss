@@ -1,0 +1,50 @@
+@import 'base';
+
+.comment-field {
+  @include editing;
+  width: 100%;
+
+  &:focus {
+    @include editing-focus;
+  }
+}
+
+.reply {
+  .comment-bubble {
+    text-align: right;
+  }
+}
+
+.comment-meta {
+  text-align: center;
+  padding: 0;
+
+  .img-circle {
+    width: 48px;
+    height: 48px;
+    background: #333;
+    clear: both;
+  }
+
+  .meta-content {
+
+  }
+}
+
+.comment-reply-meta {
+  color: $meta-text;
+  font-weight: 700;
+  padding-top:15px;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+
+  span {
+    display: block;
+  }
+}
+
+.comment-thread {
+  padding: 0px;
+  margin: 0px;
+}

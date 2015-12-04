@@ -1,0 +1,22 @@
+{
+  "extends": "airbnb",
+  "root": true,
+  "globals": {
+    "__DEV__"      : false,
+    "__PROD__"     : false,
+    "__DEBUG__"    : false,
+    "__DEBUG_NW__" : false
+  },
+  "rules": {
+    "comma-dangle": [1, "never"],
+    "semi": [0],
+    "key-spacing": [0, {
+      "beforeColon": true,
+      "afterColon": true
+    }],
+    "quotes": [0],
+    "no-else-return": 0,
+    "space-before-function-paren": [0, "always"],
+    "react/jsx-quotes": [0, "single"]
+  }
+}
