@@ -7,3 +7,10 @@ export function getApps () {
     promise: API.getApps()
   }
 }
+
+export function getDetails (slug) {
+  return {
+    types: [ types.DETAIL_FETCH, types.DETAIL_FETCH_SUCCESS, types.DETAIL_FETCH_FAILURE ],
+    promise: API.getDetails(slug)
+  }
+}

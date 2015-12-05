@@ -1,9 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router'
 import './Home-AppList-App.scss'
 
 export default class App extends React.Component {
   static propTypes = {
-    data: React.PropTypes.object
+    data: React.PropTypes.object,
+    onClick: React.PropTypes.func
   }
 
   render () {
@@ -25,11 +27,13 @@ export default class App extends React.Component {
 
     return (
       <div className="home-applist-app">
-        <div className="app-title-container">
-          <h3 className="app-title">
-            { this.props.data.name }
-          </h3>
-        </div>
+        <Link to={ '/' + this.props.data.slug }>
+          <div className="app-title-container">
+            <h3 className="app-title">
+              { this.props.data.name }
+            </h3>
+          </div>
+        </Link>
 
         <div className={ this.props.data.status.class || statusClass } >
           { this.props.data.status === 1 &&
@@ -59,7 +63,11 @@ export default class App extends React.Component {
           </div>
         }
 
-        <p>{ this.props.data.description }</p>
+        <div className="info-link">
+          <Link to={ '/' + this.props.data.slug }>
+            More info
+          </Link>
+        </div>
 
       </div>
     )

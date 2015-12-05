@@ -248,3 +248,21 @@ export function getApps () {
     })
   })
 }
+
+export function getDetails (slug) {
+  return new Promise( ( resolve, reject ) => {
+    if (!slug) reject( new Error("That app wasn't found.") )
+
+    const details = apps.filter( a => {
+      if (a.slug.toLowerCase() === slug.toLowerCase()) {
+        return a
+      }
+    })
+
+    if (typeof app === undefined ) reject( new Error("That app wasn't found.") )
+
+    return resolve({
+      details: details[0]
+    })
+  })
+}
