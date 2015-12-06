@@ -2,6 +2,9 @@
 
 .header {
   border-radius: 0;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
 
   .nav-links {
     color: gray;
@@ -10,7 +13,7 @@
       padding-top: 15px;
 
       a {
-        color: gray;
+        color: white;
         padding-left: 20px;
       }
     }

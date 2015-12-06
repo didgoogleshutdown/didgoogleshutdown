@@ -10,12 +10,17 @@ export default class Header extends React.Component {
   }
 
   render () {
+    const colors = [ '#4286F5', '#E84235', '#F7BC33', '#56AA54' ]
+    const dgsd = ['D', 'G', 'S', 'D'].map( (letter, index) => (
+      <span style={ { color: colors[index] }}>{ letter }</span>
+    ))
+
     return (
       <nav className="navbar navbar-default header">
         <div className="container">
           <div className="navar-header">
             <Link to='/' className="navbar-brand">
-              DGSD?
+              { dgsd }?
             </Link>
           </div>
           <div className="nav-links">

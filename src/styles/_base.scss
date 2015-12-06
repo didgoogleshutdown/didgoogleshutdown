@@ -1,9 +1,15 @@
 // Settings go here
 $mobile: "only screen and (max-width : 737px)";
 $phone: "only screen and (max-width : 667px)";
+$desktop: "only screen and (min-width : 738px)";
+
+$yellow: #F7BC33;
+$red: #E84235;
+$green: #56AA54;
+$blue: #4286F5;
 
 body {
-  font-family: -apple-system;
+  font-family: -apple-system, Helvetica, Arial, sans-serif
 }
 
 h1, h2, h3, h4, h5 {

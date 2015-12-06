@@ -7,14 +7,10 @@ export default class MainHero extends React.Component {
   render () {
     return (
       <div className="row main-hero">
-        <div className="jumbotron">
-          <div className="text-center container">
-             <h1>Did Google Shutdown ___________ Yet?</h1>
-             <h2>The Google product and service buyer's guide. Don't buy before they die!</h2>
-             <h3>How many times have you used a Google product just to have it shut down soon after?
-             To Google, that's just the price <i>you</i> have to pay for <i>them</i> to succeed later on.</h3>
-             <h3>Stop being a geinea pig. Here we crunch the numbers on just how bad Google's track record is.</h3>
-          </div>
+        <div className="jumbotron text-center container">
+           <h1>Did Google Shutdown <u dangerouslySetInnerHTML={ { __html: '&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp' } }></u> Yet?</h1>
+           <h2>Tired of getting on the hype train of another Google product only to have it shut down before you can finish typing in your beta key?</h2>
+           <h2>This site tracks the status and outlook of Google products, and tries to judge Google's chances of making another good product overall.</h2>
         </div>
       </div>
     )

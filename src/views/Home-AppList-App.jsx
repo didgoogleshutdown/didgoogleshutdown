@@ -9,21 +9,8 @@ export default class App extends React.Component {
   }
 
   render () {
-    let statusClass = 'alert alert-success'
-
-    if ( this.props.data.status === 2 ) {
-      statusClass = 'alert alert-warning'
-    } else if ( this.props.data.status === 3 ) {
-      statusClass = 'alert alert-danger'
-    }
-
-    let outlookClass = 'alert alert-success'
-
-    if ( this.props.data.outlook === 2 ) {
-      outlookClass = 'alert alert-warning'
-    } else if ( this.props.data.outlook === 3 ) {
-      outlookClass = 'alert alert-danger'
-    }
+    const statusClass = ['success', 'warning', 'dead']
+    const outlookClass = ['success', 'warning', 'alert-danger']
 
     return (
       <div className="home-applist-app">
@@ -35,38 +22,59 @@ export default class App extends React.Component {
           </div>
         </Link>
 
-        <div className={ this.props.data.status.class || statusClass } >
-          { this.props.data.status === 1 &&
-            <span>Alive!</span>
-          }
-          { this.props.data.status === 2 &&
-            <span>Dying!</span>
-          }
-          { this.props.data.status === 3 &&
-            <span>Dead</span>
-          }
-          { this.props.data.status.text }
-        </div>
+        <p className="row-label">Status</p>
+        { this.props.data.status === 1 &&
+          <div className={ this.props.data.status.class || statusClass[0] + ' app-row' }>
+            <span className="icon glyphicon glyphicon-ok"></span>
+            <span className="text">Alive!</span>
+          </div>
+        }
+        { this.props.data.status === 2 &&
+          <div className={ this.props.data.status.class || statusClass[1] + ' app-row'}>
+            <span className="icon glyphicon glyphicon-exclamation-sign"></span>
+            <span className="text">Dying!</span>
+          </div>
+        }
+        { this.props.data.status === 3 &&
+          <div className={ this.props.data.status.class || statusClass[2] + ' app-col'}>
+            <span className="icon">💀</span>
+            <span className="text">Dead</span>
+          </div>
+        }
+        { this.props.data.status.text }
+
 
         { this.props.data.status !== 3 &&
-          <div className={ this.props.data.outlook.class || outlookClass } >
-            { this.props.data.outlook === 1 &&
-              <span>Fine</span>
+          <div>
+            <p className="row-label">Outlook</p>
+            { this.props.data.status === 1 &&
+              <div className={ this.props.data.outlook.class || outlookClass[0] + ' app-row'}>
+                <span className="icon glyphicon glyphicon-ok"></span>
+                <span className="text">Fine</span>
+              </div>
             }
-            { this.props.data.outlook === 2 &&
-              <span>Sketchy</span>
+            { this.props.data.status === 2 &&
+              <div className={ this.props.data.outlook.class || outlookClass[1] + ' app-row'}>
+                <span className="icon">🔮</span>
+                <span className="text">Sketchy</span>
+              </div>
             }
-            { this.props.data.outlook === 3 &&
-              <span>Days numbered</span>
+            { this.props.data.status === 3 &&
+              <div className={ this.props.data.outlook.class || outlookClass[2] + ' app-row'}>
+                <span className="icon glyphicon glyphicon-ban-circle "></span>
+                <span className="text">Days numbered</span>
+              </div>
             }
-            { this.props.data.outlook.text }
           </div>
         }
 
         <div className="info-link">
-          <Link to={ '/' + this.props.data.slug }>
-            More info
-          </Link>
+          <div>
+            <Link to={ '/' + this.props.data.slug }>
+              <span>{ 'More info   ' }</span>
+              <span className="glyphicon  glyphicon-resize-full"></span>
+            </Link>
+          </div>
         </div>
 
       </div>
