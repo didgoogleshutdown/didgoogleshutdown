@@ -8,14 +8,6 @@ const apps = [
     "slug": "Search"
   },
   {
-    "name": "Reader",
-    "popularity": 2,
-    "status": 3,
-    "outlook": 3,
-    "description": "Killed unexpectedly after many years of support.",
-    "slug": "Reader"
-  },
-  {
     "name": "Earth",
     "popularity": 1,
     "status": 1,
@@ -30,22 +22,6 @@ const apps = [
     "outlook": 1,
     "description": "While despised by many, Android is installed on too many devices for anyone to ignore, especially Google.",
     "slug": "Android"
-  },
-  {
-    "name": "Drive",
-    "popularity": 2,
-    "status": 1,
-    "outlook": 1,
-    "description": "This iCloud-like service replaced Google Docs, so is probably doing OK.",
-    "slug": "Drive"
-  },
-  {
-    "name": "Reader",
-    "popularity": 2,
-    "status": 3,
-    "outlook": 3,
-    "description": "Killed unexpectedly after many years of support.",
-    "slug": "Reader"
   },
   {
     "name": "Blogger",
