@@ -10,7 +10,7 @@ export default class App extends React.Component {
 
   render () {
     const statusClass = ['success', 'warning', 'dead']
-    const outlookClass = ['success', 'warning', 'alert-danger']
+    const outlookClass = ['success', 'warning', 'danger']
 
     return (
       <div className="home-applist-app">
@@ -47,21 +47,21 @@ export default class App extends React.Component {
         { this.props.data.status !== 3 &&
           <div>
             <p className="row-label">Outlook</p>
-            { this.props.data.status === 1 &&
+            { this.props.data.outlook === 1 &&
               <div className={ this.props.data.outlook.class || outlookClass[0] + ' app-row'}>
                 <span className="icon glyphicon glyphicon-ok"></span>
                 <span className="text">Fine</span>
               </div>
             }
-            { this.props.data.status === 2 &&
+            { this.props.data.outlook === 2 &&
               <div className={ this.props.data.outlook.class || outlookClass[1] + ' app-row'}>
                 <span className="icon">🔮</span>
                 <span className="text">Sketchy</span>
               </div>
             }
-            { this.props.data.status === 3 &&
+            { this.props.data.outlook === 3 &&
               <div className={ this.props.data.outlook.class || outlookClass[2] + ' app-row'}>
-                <span className="icon glyphicon glyphicon-ban-circle "></span>
+                <span className="icon glyphicon glyphicon-ban-circle"></span>
                 <span className="text">Days numbered</span>
               </div>
             }
