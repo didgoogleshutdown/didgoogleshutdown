@@ -1,5 +1,13 @@
 const apps = [
   {
+    "name": "Gmail",
+    "popularity": 1,
+    "status": 2,
+    "outlook": 3,
+    "description": "In a surprise move, Google has started moving people over to Inbox, a much less powerful app that was seen as another Google experiment.",
+    "slug": "Gmail"
+  },
+  {
     "name": "Search",
     "popularity": 1,
     "status": 1,
@@ -83,8 +91,8 @@ const apps = [
     "name": "Inbox",
     "popularity": 2,
     "status": 1,
-    "outlook": 2,
-    "description": "Google's attempt at a minimal email client for shakers and movers. Its in the midst of an existential crisis as email powerusers find it lacking.",
+    "outlook": 1,
+    "description": "This somewhat lacking email app is the new replacement for Gmail.",
     "slug": "Inbox"
   },
   {
