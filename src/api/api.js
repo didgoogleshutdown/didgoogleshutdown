@@ -1,3 +1,5 @@
+import request from 'superagent'
+
 const apps = [
   {
     "name": "Gmail",
@@ -250,3 +252,113 @@ export function getDetails (slug) {
     })
   })
 }
+
+export const login = (credentials) => (
+  new Promise( (resolve, reject) => {
+    request
+      .post(process.env.API_URL + '/api/users/login')
+      .set('Accept', 'application/json')
+      .send({
+        email: credentials.email,
+        password: credentials.password
+      })
+      .then( (response, error) => {
+        if (error) reject(error)
+
+        resolve({
+          user: {
+            ...response.body
+          }
+        })
+      })
+  })
+)
+
+export const postUser = (credentials) => (
+  new Promise( (resolve, reject) => {
+    request
+      .post(process.env.API_URL + '/api/users/signup')
+      .set('Accept', 'application/json')
+      .send({
+        email: credentials.email,
+        password: credentials.password,
+        name: credentials.name
+      })
+      .then( (response, error) => {
+        if (error) reject(error)
+
+        resolve({
+          user: {
+            ...response.body
+          }
+        })
+      })
+  })
+)
+
+export const getUser = () => (
+  new Promise( (resolve, reject) => {
+    request
+      .get( process.env.API_URL + '/api/users/user')
+      .set('token', window.localStorage.token)
+      .send()
+      .then( (response, error) => {
+        if (error) reject(error)
+
+        resolve({
+          user: response.body
+        })
+      })
+  })
+)
+
+export const getComments = (slug) => (
+  new Promise( (resolve, reject) => {
+    request
+      .get( process.env.API_URL + '/api/threads/' + slug.toLowerCase() )
+      .set('Accept', 'application/JSON')
+      .send()
+      .then( (response, error) => {
+        if (error) reject(error)
+
+        resolve({
+          comments: response.body
+        })
+      })
+  })
+)
+
+export const postThread = (data, slug) => (
+  new Promise( (resolve, reject) => {
+    request
+      .post( process.env.API_URL + '/api/thread/' + slug.toLowerCase() )
+      .set('token', window.localStorage.token)
+      .send({
+        body: data.body,
+        title: data.title
+      })
+      .then( (response, error) => {
+        if (error) reject(error)
+
+        resolve()
+      })
+  })
+)
+
+export const postReply = (data) => (
+  new Promise( (resolve, reject) => {
+    request
+      .post( process.env.API_URL + '/api/reply/' + data.thread )
+      .set('token', window.localStorage.token)
+      .send({
+        body: data.body,
+        parent: data.parent,
+        thread: data.thread
+      })
+      .then( (response, error) => {
+        if (error) reject(error)
+
+        resolve(response)
+      })
+  })
+)

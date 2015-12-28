@@ -17,7 +17,8 @@ class Home extends React.Component {
     params: React.PropTypes.object,
     children: React.PropTypes.element,
     dispatch: React.PropTypes.func,
-    apps: React.PropTypes.array
+    apps: React.PropTypes.array,
+    user: React.PropTypes.object
   }
 
   constructor (props) {
@@ -56,7 +57,9 @@ class Home extends React.Component {
             overlayStyle={{}}
             modalStyle={{}}
           >
-            { this.props.children }
+            { React.cloneElement(this.props.children, {
+              user: this.props.user
+            })}
           </Modal>
         }
       </div>

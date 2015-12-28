@@ -9,7 +9,9 @@ export default class CommentEditor extends React.Component {
     id: React.PropTypes.string,
     onSubmit: React.PropTypes.func,
     show: React.PropTypes.bool,
-    parent: React.PropTypes.object
+    parent: React.PropTypes.object,
+    thread: React.PropTypes.string,
+    onToggleReply: React.PropTypes.func
   }
 
   constructor (props) {
@@ -20,7 +22,12 @@ export default class CommentEditor extends React.Component {
   }
 
   submitHandler () {
-    this.props.onSubmit(this.state.body, this.props.parent);
+    this.props.onSubmit({
+      body: this.state.body,
+      parent: this.props.parent,
+      thread: this.props.thread
+    });
+    this.props.onToggleReply()
   }
 
   changeHandler (event) {

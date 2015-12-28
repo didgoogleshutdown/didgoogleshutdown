@@ -48,6 +48,10 @@ const webpackConfig = {
           'css/locals?module&localIdentName=[name]__[local]___[hash:base64:5]',
           'sass-loader?includePaths[]=' + paths.src('styles')
         ]
+      },
+      {
+        test: /\.json$/,
+        loader: 'json'
       }
     ]
   },

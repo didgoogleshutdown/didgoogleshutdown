@@ -1,0 +1,11 @@
+@import 'base';
+
+.comment {
+
+  &.show-reply-editor {
+    .comment-bubble {
+      width: 100%;
+      display: block;
+    }
+  }
+}

@@ -1,13 +1,13 @@
 import React from 'react';
-import Comment from './Comments-Thread-Comment';
+import Comment from './Comments-Comment';
 import Replies from './Comments-Thread-Replies';
 
 export default class FunctionDocumentationComment extends React.Component {
 
   static propTypes = {
+    user: React.PropTypes.user,
     comments: React.PropTypes.array,
-    onSubmit: React.PropTypes.func,
-    onNewReply: React.PropTypes.func
+    onSubmit: React.PropTypes.func
   }
 
   render () {
@@ -17,14 +17,17 @@ export default class FunctionDocumentationComment extends React.Component {
           { this.props.comments.map( (comment, index) => (
             <div key={ index } >
               <Comment
-                { ...comment }
+                user={ this.props.user }
+                comment={ comment }
+                thread={ comment.slug }
                 onSubmit={ this.props.onSubmit }
               />
 
               { comment.replies &&
                 <Replies
+                  user={ this.props.user }
                   replies={ comment.replies }
-                  parent={ comment }
+                  thread={ comment.slug }
                   onSubmit={ this.props.onSubmit }
                 />
               }

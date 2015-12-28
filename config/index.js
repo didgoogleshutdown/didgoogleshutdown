@@ -45,7 +45,8 @@ Edit at your own risk
 config.set('env', process.env.NODE_ENV);
 config.set('globals', {
   'process.env'  : {
-    'NODE_ENV' : JSON.stringify(config.get('env'))
+    'NODE_ENV': JSON.stringify(config.get('env')),
+    'API_URL': JSON.stringify(process.env.API_URL)
   },
   'NODE_ENV'     : config.get('env'),
   '__DEV__'      : config.get('env') === 'development',

@@ -1,17 +1,18 @@
 @import 'base';
 
-.comment-field {
-  @include editing;
-  width: 100%;
-
-  &:focus {
-    @include editing-focus;
+.comments {
+  .btn.new-thread {
+    margin-bottom: 10px;
   }
 }
 
-.reply {
-  .comment-bubble {
-    text-align: right;
+.comment-field {
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+
+  &:focus {
+
   }
 }
 
@@ -32,7 +33,7 @@
 }
 
 .comment-reply-meta {
-  color: $meta-text;
+  color: #ccc;
   font-weight: 700;
   padding-top:15px;
   width: 100%;

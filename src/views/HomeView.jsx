@@ -13,14 +13,25 @@ import Header from './Header';
 export default class HomeView extends React.Component {
 
   static propTypes = {
-    children: React.PropTypes.element
+    children: React.PropTypes.element,
+    user: React.PropTypes.object,
+    onLogin: React.PropTypes.func,
+    onRegister: React.PropTypes.func,
+    onLogout: React.PropTypes.func
   }
 
   render () {
     return (
       <div>
-        <Header />
-        { this.props.children }
+        <Header
+          onLogin={ this.props.onLogin }
+          onRegister={ this.props.onRegister }
+          onLogout={ this.props.onLogout }
+          user={ this.props.user }
+        />
+          { React.cloneElement(this.props.children, {
+            user: this.props.user
+          })}
       </div>
     );
   }

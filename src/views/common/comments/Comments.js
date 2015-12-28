@@ -6,8 +6,11 @@ import './Comments.scss';
 export default class Comments extends React.Component {
   static propTypes = {
     comments: React.PropTypes.array,
-    onSubmit: React.PropTypes.func,
-    user: React.PropTypes.object
+    onReply: React.PropTypes.func,
+    onNewThread: React.PropTypes.func,
+    user: React.PropTypes.object,
+    params: React.PropTypes.object,
+    className: React.PropTypes.string
   }
 
   constructor (props) {
@@ -17,48 +20,21 @@ export default class Comments extends React.Component {
     };
   }
 
-  submitHandler (body, parent) {
-    const newComment = {
-      user: {
-        ...this.props.user
-      },
-      meta: {
-        created: new Date() * 1
-      },
-      body: body,
-      id: 'temp_id_' + Date() * 1
-    };
+  newThreadHandler (data) {
+    this.setState({ showEditor: false })
+    this.submitHandler(data)
+  }
 
-    const newComments = this.props.comments.slice(0);
-
-    if (!parent) {
-      newComments.push( newComment );
+  submitHandler (data) {
+    if (!data.parent) {
+      this.props.onNewThread({
+        body: data.body,
+        title: data.title || data.body.slice(0, 20)
+      })
     } else {
-      newComment.meta.parent = {
-        id: parent.id,
-        user: {
-          name: parent.user.name
-        }
-      };
-
-      newComments.map( comment => {
-        if (comment.id === parent.id) {
-          if ( comment.replies ) {
-            comment.replies.push(newComment);
-          } else {
-            comment.replies = [];
-            comment.replies.push(newComment);
-          }
-        } else if ( comment.replies ) {
-          comment.replies.map( reply => {
-            if (reply.id === parent.id ) {
-              comment.replies.push(newComment);
-            }
-          });
-        }
-      });
+      this.props.onReply(data)
     }
-    this.props.onSubmit(newComments);
+    this.setState({ showEditor: false });
   }
 
   clickHandler () {
@@ -67,22 +43,31 @@ export default class Comments extends React.Component {
 
   render () {
     return (
-      <div className="container-fluid">
+      <div className={ this.props.className || 'container-fluid' }>
         <div className="row">
           <h3>Comments</h3>
-          <button
-            className="btn btn-default"
-            onClick={ ::this.clickHandler }
-          >
-            New
-          </button>
+
+        { this.props.user &&
+            <button
+              className="btn btn-default new-thread"
+              onClick={ ::this.clickHandler }
+            >
+              New
+            </button>
+          }
+
+          { !this.props.user &&
+            <span>Sign in or register to discuss.</span>
+          }
+
           <CommentEditor
             className="well"
             show={ this.state.showEditor }
-            onSubmit={ ::this.submitHandler }
+            onSubmit={ ::this.newThreadHandler }
           />
         </div>
         <Threads
+          user={ this.props.user }
           comments={ this.props.comments }
           onSubmit={ ::this.submitHandler }
         />

@@ -2,12 +2,14 @@ import React from 'react'
 import Progress from 'react-progress-label'
 import { Link } from 'react-router'
 import { connect } from 'react-redux'
-import { getDetails } from 'actions/Actions'
+import { getDetails, postReply, getComments, postThread } from 'actions/Actions'
+import Comments from './common/comments/Comments'
 
-import './Details.scss'
+import './Detail.scss'
 
 const mapStateToProps = state => ({
-  details: state.detailPage.details
+  details: state.detailPage.details,
+  comments: state.comments.comments
 })
 
 class Detail extends React.Component {
@@ -15,7 +17,9 @@ class Detail extends React.Component {
   static propTypes = {
     dispatch: React.PropTypes.func,
     details: React.PropTypes.object,
-    params: React.PropTypes.object
+    params: React.PropTypes.object,
+    user: React.PropTypes.object,
+    comments: React.PropTypes.array
   }
 
   constructor (props) {
@@ -29,6 +33,22 @@ class Detail extends React.Component {
     this.props.dispatch( getDetails( this.props.params.app ) )
     .catch( ()=> {
       this.setState({ error: true })
+    })
+    this.props.dispatch( getComments(this.props.params.app) )
+  }
+
+  newThreadHandler (data) {
+    this.props.dispatch( postThread(data, this.props.params.app) )
+    .then( () => {
+      this.props.dispatch( getComments(this.props.params.app))
+    })
+  }
+
+  /* That data object is `thread`, `parent` and `body`. Parent is an object with post ID and user ID. Body is a string. Thread is a string, the slug of the thread it's in. */
+  replyHandler (data) {
+    this.props.dispatch( postReply(data))
+    .then( () => {
+      this.props.dispatch( getComments(this.props.params.app))
     })
   }
 
@@ -79,15 +99,23 @@ class Detail extends React.Component {
                 trackColor="transparent"
                 progressColor={ colors[ this.props.details.outlook - 1 ] }
               >
-              <text x="75" y="75" style={{'textAnchor': 'middle'}}>
-                { outlookMessages[ this.props.details.outlook - 1 ] }
-              </text>
+                <text x="75" y="75" style={{'textAnchor': 'middle'}}>
+                  { outlookMessages[ this.props.details.outlook - 1 ] }
+                </text>
               </Progress>
             </div>
           }
         </div>
 
         <p className="description">{ this.props.details.description }</p>
+
+        <Comments
+          className="container-fluid comments"
+          comments={ this.props.comments }
+          user={ this.props.user }
+          onNewThread={ ::this.newThreadHandler }
+          onReply={ ::this.replyHandler }
+        />
 
         { this.state.error &&
           <div>

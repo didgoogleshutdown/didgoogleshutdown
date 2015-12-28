@@ -14,7 +14,11 @@ export default class CommentsBody extends React.Component {
     created: React.PropTypes.number,
     onNewReply: React.PropTypes.func,
     onSubmit: React.PropTypes.func,
-    className: React.PropTypes.string
+    onClickReply: React.PropTypes.func,
+    className: React.PropTypes.string,
+    thread: React.PropTypes.string,
+    showEditor: React.PropTypes.bool,
+    user: React.PropTypes.object
   }
 
   constructor (props) {
@@ -24,10 +28,6 @@ export default class CommentsBody extends React.Component {
     };
   }
 
-  clickHandler () {
-    this.setState({ showEditor: !this.state.showEditor });
-  }
-
   render () {
     return (
       <div className={ 'comments-body ' + this.props.className }>
@@ -35,14 +35,18 @@ export default class CommentsBody extends React.Component {
           { mdast().use(reactRenderer).process( this.props.body ) }
           <div
             className={ 'reply-button ' + (!this.state.showEditor ? 'highlight' : '') }
-            onClick={ ::this.clickHandler }
+            onClick={ this.props.onClickReply }
           >
-            { !this.state.showEditor ? 'Reply' : 'Cancel' }
+          { this.props.user &&
+            <span>{ !this.props.showEditor ? 'Reply' : 'Cancel' }</span>
+          }
           </div>
           <CommentEditor
-            show={ this.state.showEditor }
+            thread={ this.props.thread }
+            show={ this.props.showEditor }
             parent={ this.props.parent }
             onSubmit={ this.props.onSubmit }
+            onToggleReply={ this.props.onClickReply }
           />
         </div>
       </div>

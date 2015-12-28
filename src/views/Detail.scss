@@ -3,6 +3,7 @@
 .detail {
   display: flex;
   flex-direction: column;
+  overflow: scroll;
 
   .title {
     height: 90px;
@@ -17,5 +18,9 @@
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 40px;
+  }
+
+  .comments {
+    flex: 1;
   }
 }

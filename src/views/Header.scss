@@ -7,14 +7,18 @@
   border: none;
 
   .nav-links {
-    color: gray;
+    color: white;
+
+    .login-button, .logout-button {
+      cursor: pointer;
+    }
 
     ul.list-inline li {
       padding-top: 15px;
+      padding-left: 20px;
 
       a {
         color: white;
-        padding-left: 20px;
       }
     }
   }

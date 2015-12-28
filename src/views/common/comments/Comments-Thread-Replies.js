@@ -1,26 +1,28 @@
 import React from 'react';
-import Reply from './Comments-Thread-Replies-Reply';
+import Comment from './Comments-Comment';
 
 export default class Replies extends React.Component {
   static propTypes = {
+    user: React.PropTypes.object,
     replies: React.PropTypes.array,
     parent: React.PropTypes.object,
-    onSubmit: React.PropTypes.func
+    onSubmit: React.PropTypes.func,
+    thread: React.PropTypes.string
   }
 
   render () {
     return (
       <div>
-        { this.props.replies.map( (reply, index) => {
+        { this.props.replies.map( (comment, index) => {
           return (
-            <Reply
+            <Comment
               key={ index }
-              id={ reply.id }
-              user={ reply.user }
-              body={ reply.body }
+              user={ this.props.user }
+              comment={ comment }
               parent={ this.props.parent }
-              meta={ reply.meta }
+              thread={ this.props.thread }
               onSubmit={ this.props.onSubmit }
+              isReply
             />
           );
         })}
