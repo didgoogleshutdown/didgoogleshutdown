@@ -13,7 +13,8 @@ class CoreLayout extends React.Component {
   static propTypes = {
     children : React.PropTypes.element,
     dispatch: React.PropTypes.func,
-    user: React.PropTypes.object
+    user: React.PropTypes.object,
+    history: React.PropTypes.object
   }
 
   constructor (props) {
@@ -56,7 +57,8 @@ class CoreLayout extends React.Component {
             user: this.props.user,
             onLogin: ::this.loginHandler,
             onRegister: ::this.registrationHandler,
-            onLogout: ::this.logoutHandler
+            onLogout: ::this.logoutHandler,
+            history: this.props.history
           })}
         </div>
         <div className="container">

@@ -17,7 +17,8 @@ export default class HomeView extends React.Component {
     user: React.PropTypes.object,
     onLogin: React.PropTypes.func,
     onRegister: React.PropTypes.func,
-    onLogout: React.PropTypes.func
+    onLogout: React.PropTypes.func,
+    history: React.PropTypes.object
   }
 
   render () {
@@ -30,7 +31,8 @@ export default class HomeView extends React.Component {
           user={ this.props.user }
         />
           { React.cloneElement(this.props.children, {
-            user: this.props.user
+            user: this.props.user,
+            history: this.props.history
           })}
       </div>
     );

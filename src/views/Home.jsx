@@ -18,7 +18,8 @@ class Home extends React.Component {
     children: React.PropTypes.element,
     dispatch: React.PropTypes.func,
     apps: React.PropTypes.array,
-    user: React.PropTypes.object
+    user: React.PropTypes.object,
+    history: React.PropTypes.object
   }
 
   constructor (props) {
@@ -33,7 +34,7 @@ class Home extends React.Component {
   }
 
   toggleModal () {
-    this.setState({ showDetailModal: !this.state.showDetailModal })
+    this.props.history.pushState(null, `/`);
   }
 
   render () {
