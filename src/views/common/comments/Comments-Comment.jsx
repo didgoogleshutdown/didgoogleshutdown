@@ -40,7 +40,8 @@ export default class Reply extends React.Component {
         />
         <UserMeta
           className={ "col-xs-2 " + ( this.props.isReply ? 'pull-right' : '' ) }
-          user={ this.props.comment.user }
+          poster={ this.props.comment.user }
+          user={ this.props.user }
         />
         <Body
           className={ ( this.props.isReply ? 'col-xs-8 pull-right' : 'col-xs-10 ' ) }

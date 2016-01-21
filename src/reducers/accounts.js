@@ -6,9 +6,21 @@ const initialState = {
 };
 
 export default createReducer( initialState, {
+  [types.USER_FETCH]: (state) => ({
+    ...state
+  }),
+
   [types.USER_FETCH_SUCCESS]: (state, action) => ({
     ...state,
     ...action.result
+  }),
+
+  [types.USER_FETCH_FAILURE]: (state) => ({
+    ...state
+  }),
+
+  [types.LOGIN]: (state) => ({
+    ...state
   }),
 
   [types.LOGIN_SUCCESS]: (state, action) => ({
@@ -23,4 +35,4 @@ export default createReducer( initialState, {
   [types.USER_POST_SUCCESS]: (state, action) => ({
     ...action.result
   })
-});
+})

@@ -35,5 +35,9 @@ export default keyMirror({
 
   DETAIL_FETCH: null,
   DETAIL_FETCH_SUCCESS: null,
-  DETAIL_FETCH_FAILURE: null
+  DETAIL_FETCH_FAILURE: null,
+
+  USER_EVENT_POST: null,
+  USER_EVENT_POST_SUCCESS: null,
+  USER_EVENT_POST_FAILURE: null
 })

@@ -11,5 +11,12 @@ export default createReducer( initialState, {
       ...state,
       ...action.result
     }
+  },
+
+  [types.DETAIL_FETCH]: (state, action) => {
+    return {
+      ...state,
+      ...action.result
+    }
   }
 })

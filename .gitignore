@@ -30,3 +30,5 @@ node_modules
 dist
 
 other-ignored/
+
+.env

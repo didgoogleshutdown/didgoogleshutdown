@@ -3,8 +3,8 @@ import moment from 'moment';
 
 export default class Meta extends React.Component {
   static propTypes = {
-    parent: React.PropTypes.number,
-    created: React.PropTypes.object,
+    parent: React.PropTypes.object,
+    created: React.PropTypes.number,
     id: React.PropTypes.string
   }
 

@@ -34,7 +34,7 @@ class CoreLayout extends React.Component {
     this.props.dispatch( login(credentials) )
     .then( () => {
       window.localStorage.token = this.props.user.token;
-    });
+    })
   }
 
   registrationHandler (user) {

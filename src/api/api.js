@@ -362,3 +362,21 @@ export const postReply = (data) => (
       })
   })
 )
+
+export const postUserEvent = (data) => (
+  new Promise( (resolve, reject) => {
+    request
+      .post( process.env.API_URL + '/api/user/event/' + data.user.slug )
+      .set('token', window.localStorage.token)
+      .send({
+        body: data.body,
+        type: data.type,
+        active: data.active
+      })
+      .then( (response, error) => {
+        if (error) return reject(error)
+
+        resolve(response)
+      })
+  })
+)

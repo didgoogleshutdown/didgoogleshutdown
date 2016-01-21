@@ -32,6 +32,7 @@ html {
       border-radius: 10px;
       background: white;
       z-index: 9998;
+      box-shadow: 0 10px 25px 25px rgba(0,0,0,0.1);
 
       &.modal-dialog {
         position: relative;

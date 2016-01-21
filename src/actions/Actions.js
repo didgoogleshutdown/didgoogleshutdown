@@ -60,3 +60,8 @@ export const postThread = (thread, node) => ({
   types: [types.THREAD_POST, types.THREAD_POST_SUCCESS, types.THREAD_POST_FAILURE],
   promise: API.postThread(thread, node)
 })
+
+export const postUserEvent = (data) => ({
+  types: [types.USER_EVENT_POST, types.USER_EVENT_POST_SUCCESS, types.USER_EVENT_POST_FAILURE],
+  promise: API.postUserEvent(data)
+})

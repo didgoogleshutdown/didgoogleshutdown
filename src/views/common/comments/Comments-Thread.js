@@ -2,10 +2,10 @@ import React from 'react';
 import Comment from './Comments-Comment';
 import Replies from './Comments-Thread-Replies';
 
-export default class FunctionDocumentationComment extends React.Component {
+export default class Thread extends React.Component {
 
   static propTypes = {
-    user: React.PropTypes.user,
+    user: React.PropTypes.object,
     comments: React.PropTypes.array,
     onSubmit: React.PropTypes.func
   }
