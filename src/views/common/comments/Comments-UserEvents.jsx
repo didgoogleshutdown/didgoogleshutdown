@@ -37,11 +37,8 @@ class UserEvents extends React.Component {
     }
 
     this.props.dispatch( postUserEvent(data) )
-    .then( (body) => {
+    .then( () => {
       this.props.dismiss()
-    })
-    .catch( error => {
-      console.log('it did not work' + error)
     })
   }
 
