@@ -2,6 +2,9 @@ import React from 'react'
 import Progress from 'react-progress-label'
 import { Link } from 'react-router'
 import { connect } from 'react-redux'
+import mdast from 'mdast';
+import reactRenderer from 'mdast-react';
+
 import { getDetails, postReply, getComments, postThread } from 'actions/Actions'
 import Comments from './common/comments/Comments'
 
@@ -107,7 +110,9 @@ class Detail extends React.Component {
           }
         </div>
 
-        <p className="description">{ this.props.details.description }</p>
+        <p className="description">
+          { mdast().use(reactRenderer).process(this.props.details.description) }
+        </p>
 
         <Comments
           className="container-fluid comments"
