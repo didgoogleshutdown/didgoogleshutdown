@@ -4,9 +4,9 @@ const apps = [
   {
     "name": "Gmail",
     "popularity": 1,
-    "status": 2,
-    "outlook": 3,
-    "description": "In a surprise move, Google has started moving people over to Inbox, a much less powerful app that was seen as another Google experiment.",
+    "status": 1,
+    "outlook": 2,
+    "description": "In a surprise move, Google has started moving people over to Inbox, a much less powerful app that was seen as another Google experiment.\n\n Source: [Forbes' Gordon Kelly](http://www.forbes.com/sites/gordonkelly/2015/12/05/google-ending-gmail/)",
     "slug": "Gmail"
   },
   {
@@ -24,6 +24,14 @@ const apps = [
     "outlook": 2,
     "description": "Mostly replaced by web maps, but lives on as a Pro version for special uses.",
     "slug": "Earth"
+  },
+  {
+    "name": "Youtube",
+    "popularity": 1,
+    "status": 1,
+    "outlook": 1,
+    "description": "Youtube was aquired by Google and still works somewhat independently. While nearly unchallenged in video hosting, YouTube has failed to produce revenue in the order Google expected. Multiple efforts have been made to monetize features, such as movie rentals, a music service and Youtube Red, all with so far little uptake.",
+    "slug": "Youtube"
   },
   {
     "name": "Android",
@@ -104,6 +112,14 @@ const apps = [
     "outlook": 3,
     "description": "Sparrow was an email app for iOS and Mac that Google bought in 2012 and shut down in early 2015.",
     "slug": "Sparrow"
+  },
+  {
+    "name": "Picasa",
+    "popularity": 2,
+    "status": 2,
+    "outlook": 3,
+    "description": "Google announced February 12th that it is shutting down Picasa. \n\n Source: [Times of India](http://timesofindia.indiatimes.com/tech/tech-news/Google-is-shutting-down-Picasa/articleshow/50972397.cms), [Google](http://googlephotos.blogspot.com/2016/02/moving-on-from-picasa.html)",
+    "slug": "Picasa"
   },
   {
     "name": "Picasa Web Albums",
