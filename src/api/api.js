@@ -240,6 +240,30 @@ const apps = [
     "outlook": 3,
     "description": "Google suggests people migrate to Github.",
     "slug": "Code"
+  },
+  {
+    "name": "Verily",
+    "popularity": 3,
+    "status": 2,
+    "outlook": 2,
+    "description": "Verily is Google's life sciences division. At one point they boasted they wanted to solve aging. Now though, most employees have quit because working with CEO Andrew Conrad is so toxic.\n\n http://www.statnews.com/2016/03/28/google-life-sciences-exodus/",
+    "slug": "Verily"
+  },
+  {
+    "name": "Boston Dynamics",
+    "popularity": 3,
+    "status": 3,
+    "outlook": 3,
+    "description": "Boston Dynamics was purchased to make up Google's robotics effort. However, leaked emails show that after BD developed humanoid-looking robots, Google put BD back up for sale to avoid questsions about robots replacing humans and taking human jobs. Was the Boston Dynamics purchase just a way to get press?\n \n http://www.bloomberg.com/news/articles/2016-03-17/google-is-said-to-put-boston-dynamics-robotics-unit-up-for-sale",
+    "slug": "Boston-Dynamics"
+  },
+  {
+    "name": "Nest",
+    "popularity": 2,
+    "status": 2,
+    "outlook": 2,
+    "description": "Nest was a team of former-Apple employees who set out to make connected home devices. After being bought by Google, Nest has released little to no new products. There are reports of mass exodus back to Apple, infighting and another toxic leader, Tony Fadell.\n \n https://www.theinformation.com/inside-tony-fadells-struggle-to-build-nest?unlock=b218ed",
+    "slug": "Nest"
   }
 ]
 
