@@ -261,8 +261,8 @@ const apps = [
     "name": "Nest",
     "popularity": 2,
     "status": 2,
-    "outlook": 2,
-    "description": "Nest was a team of former-Apple employees who set out to make connected home devices. After being bought by Google, Nest has released little to no new products. There are reports of mass exodus back to Apple, infighting and another toxic leader, Tony Fadell.\n \n https://www.theinformation.com/inside-tony-fadells-struggle-to-build-nest?unlock=b218ed",
+    "outlook": 3,
+    "description": "After controvery about a harsh corporate culture led by Tony Fadell, and Fadell untlimately stepping down, Nest's workers will be merged with Google. \n \n https://www.theinformation.com/inside-tony-fadells-struggle-to-build-nest?unlock=b218ed",
     "slug": "Nest"
   }
 ]
