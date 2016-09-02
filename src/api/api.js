@@ -156,9 +156,9 @@ const apps = [
   {
     "name": "Project Ara",
     "popularity": 3,
-    "status": 2,
-    "outlook": 2,
-    "description": "Ara is Google's modular phone project. Shown in 2014 and given a deadline of 2015, Ara was instead delayed until 2016. The original design used magnets but Google said they scrapped that design because it did not pass a drop test. Similar phones have already been brought to market by others.",
+    "status": 3,
+    "outlook": 3,
+    "description": `Ara was the dream of bringing the modular nature of gaming computers to your phone, in only half the size. Half the size of a gaming computer that is, like 3 times the size of a regular smartphone. Seriously, it was very thick. It was perpetually delayed and features sacrificed until it was reportedly cancelled. \n\n [The verge](http://www.theverge.com/circuitbreaker/2016/9/1/12762236/google-project-ara-suspended-modular-phone-report)`,
     "slug": "Project-Ara"
   },
   {
