@@ -3,18 +3,12 @@ import React from 'react';
 export default class About extends React.Component {
   render () {
     return (
-    <div className="container">
-      <h1>About me.</h1>
-      This site is by someone who was a Google fan from 2007 until 2011, but was disatisfied by Google's scatterbrained attention span and frequent product discontinuations.
-      <br/><br/>
-      Some people will accuse me of "not understanding Google". Actually, I understand the theory. I am looking at the empircal evidence. Does Google's "fail until it works" philosphy actually make things that work?
-      <br/><br/>
-      The other issue, is what effect does this have on users? Is it respectful of a user's time to release products before they are finished with no commitment to support them?
-      <br/><br/>
-      It's become my opinion that companies have a responsibility to release only what they intend to support. It's their responsibility to test whether the product is sustainable before launch, not after.
-      <br/><br/>
-      If you like this site and want more added, or more sites like it, please <a href="https://www.patreon.com/pleasurekevin">donate to my Patreon here</a>.
-    </div>
+      <div className="container">
+        <h1>About</h1>
+        <p>Google's philosphy has been written about many times in the press, the gist of which is they believe in a sort of app Darwinism. They should be unafraid to fail, and actually rush headlong into it, as "anything that doesn't kill you makes you stronger". With enough attempts, they suppose, they'll eventually get it right. So just don't put all your eggs in one basket and fail away!</p>
+        <p>That's the theory. This site tries to look at the empyrical data while making light of the schadenfreude of it all.</p>
+        <p>Did Google Shut Down was built and maintained by two people over the years, including a major re-write from PHP to Javascript, and is generously maintained by another, none of whom really want their names here.</p>
+      </div>
     )
   }
 }

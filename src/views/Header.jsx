@@ -46,9 +46,6 @@ export default class Header extends React.Component {
               <li>
                 <Link to="/about">About</Link>
               </li>
-              <li>
-                <a href="https://www.patreon.com/pleasurekevin">Patreon</a>
-              </li>
 
               { this.props.user &&
                 <li

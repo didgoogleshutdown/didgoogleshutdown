@@ -61,11 +61,6 @@ class CoreLayout extends React.Component {
             history: this.props.history
           })}
         </div>
-        <div className="container">
-          <br/><br/><br/>
-          © Secret Order of the 219
-          <br/><br/><br/>
-        </div>
       </div>
     );
   }
