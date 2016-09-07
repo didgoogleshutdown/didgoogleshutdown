@@ -5,8 +5,8 @@ const apps = [
     "name": "Gmail",
     "popularity": 1,
     "status": 1,
-    "outlook": 2,
-    "description": "In a surprise move, Google has started moving people over to Inbox, a much less powerful app that was seen as another Google experiment.\n\n Source: [Forbes' Gordon Kelly](http://www.forbes.com/sites/gordonkelly/2015/12/05/google-ending-gmail/)",
+    "outlook": 1,
+    "description": "While Google has shown some interest [in moving people over to Inbox](http://www.forbes.com/sites/gordonkelly/2015/12/05/google-ending-gmail/), their data-mining, ad-based email service seems pretty stable.",
     "slug": "Gmail"
   },
   {
