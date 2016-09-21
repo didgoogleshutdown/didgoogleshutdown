@@ -1,4 +1,5 @@
 import request from 'superagent'
+import { sortBy } from 'lodash'
 
 const apps = [
   {
@@ -264,13 +265,34 @@ const apps = [
     "outlook": 3,
     "description": "After controvery about a harsh corporate culture led by Tony Fadell, and Fadell untlimately stepping down, Nest's workers will be merged with Google. \n \n https://www.theinformation.com/inside-tony-fadells-struggle-to-build-nest?unlock=b218ed",
     "slug": "Nest"
+  }, {
+    "name": "Nexus",
+    "popularity": 2,
+    "status": 2,
+    "outlook": 3,
+    "description": "This line of phone co-designed by Google was perhaps the only usable incarnation of Android for many. After the beloved Nexus 5, Google paradoxically decided to go high-end but teamed up with Huawei. The Nexus 6 line was their most expensive ever but contained numerous hardware issues, making it both slow and easily broken in half using bare hands. Rumours strongly indicate the Nexus brand is dead in favour of 'Pixel' phones, to be announced October 4th.",
+    "slug": "Nexus"
+  }, {
+    "name": "Chromebook Pixel",
+    "popularity": 3,
+    "status": 3,
+    "outlook": 3,
+    "description": "Google's Chrome OS is a lightweight OS consisting of just a browser. The Chromebook Pixel caused some head-scratching as it packed a laptop-grade Intel i7 into an aluminium chassis with a high-DPI display for as much as $1,500. It was quietly removed from sale during it's second generation.",
+    "slug": "Chromebook-Pixel"
+  }, {
+    "name": "Android TV",
+    "slug": "Android-TV",
+    "popularity": 3,
+    "status": 1,
+    "outlook": 2,
+    "description": `Like Google's other failed TV efforts before it, Android TV is off to a rocky start. After [poor reviews](http://www.forbes.com/sites/johnarcher/2015/07/23/android-tv-review-just-what-the-smart-tv-world-doesnt-need/) Google's flagship device, the Nexus Player, [has been discontinued](http://www.theverge.com/circuitbreaker/2016/5/24/11762276/google-nexus-player-discontinued). Android TV, like Android, will probably live on as the backbone for low-end TV hardware from third parties.`
   }
 ]
 
 export function getApps () {
   return new Promise( (resolve) => {
     return resolve({
-      apps: apps
+      apps: sortBy(apps, 'name')
     })
   })
 }
