@@ -286,6 +286,13 @@ const apps = [
     "status": 1,
     "outlook": 2,
     "description": `Like Google's other failed TV efforts before it, Android TV is off to a rocky start. After [poor reviews](http://www.forbes.com/sites/johnarcher/2015/07/23/android-tv-review-just-what-the-smart-tv-world-doesnt-need/) Google's flagship device, the Nexus Player, [has been discontinued](http://www.theverge.com/circuitbreaker/2016/5/24/11762276/google-nexus-player-discontinued). Android TV, like Android, will probably live on as the backbone for low-end TV hardware from third parties.`
+  }, {
+    "name": "Google Car",
+    "slug": "Google-Car",
+    "popularity": 3,
+    "status": 2,
+    "outlook": 2,
+    "description": `Google's self-driving car, another "moonshot" project, has been [scaled back considerably](https://www.theinformation.com/google-scaled-back-self-driving-car-ambitions), and industry experts have noted it's been easily eclipsed by real motor company's own projects. Google recently [spun if off](http://arstechnica.com/cars/2016/12/google-spins-out-self-driving-car-unit-now-called-waymo/) into it's own company, Waymo, likely to reduce it's costs and liabilities.`
   }
 ]
 
