@@ -108,9 +108,9 @@
     "phantomjs": "^1.9.17",
     "phantomjs-polyfill": "0.0.1",
     "react-addons-test-utils": "^0.14.0-rc1",
-    "react-transform-catch-errors": "^1.0.0",
-    "react-transform-hmr": "^1.0.1",
-    "redbox-react": "^1.0.4",
+    "react-transform-catch-errors": "1.0.0",
+    "react-transform-hmr": "1.0.1",
+    "redbox-react": "1.0.4",
     "supertest": "^1.0.1",
     "webpack-dev-server": "^1.12.0"
   }
