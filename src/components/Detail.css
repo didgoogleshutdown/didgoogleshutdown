@@ -1,0 +1,24 @@
+.detail {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+
+  .title {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .vitals {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+
+  .comments {
+    flex: 1;
+  }
+}
