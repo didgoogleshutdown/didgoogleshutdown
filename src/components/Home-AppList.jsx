@@ -15,7 +15,7 @@ export default class AppList extends React.Component {
       <div>
         {[1, 2, 3].map(popularity => {
           return (
-            <div>
+            <div key={popularity}>
               <h1>
                 {['Popular apps', 'App you may have heard of', "Apps you've never heard of"][popularity - 1]}
               </h1>
@@ -29,7 +29,9 @@ export default class AppList extends React.Component {
                   if ( app.popularity === popularity ) {
                     return (
                       <App
-                        data={ app }
+                        key={app.slug}
+                        data={app}
+                        update={this.props.update}
                       />
                     )
                   }

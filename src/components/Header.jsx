@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
-// import Modal from 'react-dumb-modal'
+import Modal from 'react-dumb-modal'
 import Login from './Login'
 
 import './Header.css'
@@ -28,7 +28,7 @@ export default class Header extends React.Component {
   render () {
     const colors = [ '#4286F5', '#E84235', '#F7BC33', '#56AA54' ]
     const dgsd = ['D', 'G', 'S', 'D'].map( (letter, index) => (
-      <span style={ { color: colors[index] }}>{ letter }</span>
+      <span key={letter + index} style={ { color: colors[index] }}>{ letter }</span>
     ))
 
     return (

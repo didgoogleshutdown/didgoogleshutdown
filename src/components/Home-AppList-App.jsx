@@ -48,7 +48,10 @@ export default class App extends React.Component {
           justifyContent: 'space-around'
          }}
         >
-          <Link to={ '/' + this.props.data.slug }>
+          <Link
+            to={'/' + this.props.data.slug }
+            onClick={this.props.update}
+          >
             <h3
               style={{
                 fontSize: 30,
@@ -121,7 +124,8 @@ export default class App extends React.Component {
           }
 
           <Link
-            to={ '/' + this.props.data.slug }
+            to={ '/?' + this.props.data.slug }
+            onClick={this.props.update}
             style={{
               display: 'flex',
               justifyContent: 'space-between',

@@ -52,25 +52,21 @@ export default class MainHero extends React.Component {
         />
         <Bar
           fill="url('#circle-pattern1')"
-          background="transparent"
           width={4000}
           height={height}
         />
         <Bar
           fill="url('#circle-pattern2')"
-          background="transparent"
           width={4000}
           height={height}
         />
         <Bar
           fill="url('#circle-pattern3')"
-          background="transparent"
           width={4000}
           height={height}
         />
         <Bar
           fill="url('#circle-pattern4')"
-          background="transparent"
           width={4000}
           height={height}
         />

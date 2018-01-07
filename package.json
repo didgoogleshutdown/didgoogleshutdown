@@ -12,8 +12,13 @@
     "gatsby-plugin-react-helmet": "^1.0.8",
     "popmotion": "^8.1.7",
     "popmotion-react": "^2.1.0",
+    "query-string": "^5.0.1",
+    "react-dumb-modal": "^1.2.0",
     "react-gradient-text": "^0.1.0",
-    "react-textgradient": "0.0.2"
+    "react-progress-label": "^1.2.2",
+    "react-textgradient": "0.0.2",
+    "remark": "^8.0.0",
+    "remark-react": "^4.0.1"
   },
   "keywords": [
     "gatsby"
@@ -24,7 +29,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
-    "deploy": "gatsby build && gh-pages -d public -b master",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
