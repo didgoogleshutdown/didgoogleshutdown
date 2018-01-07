@@ -1,0 +1,25 @@
+@import 'base';
+
+.header {
+  border-radius: 0;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+}
+
+.header .nav-links {
+  color: white;
+}
+
+.header .nav-links .login-button, .logout-button {
+  cursor: pointer;
+}
+
+.header .nav-links ul.list-inline li {
+  padding-top: 15px;
+  padding-left: 20px;
+
+  a {
+    color: white;
+  }
+}

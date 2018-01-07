@@ -1,0 +1,93 @@
+.app-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.app-title-container h3.app-title {
+  color: black;
+}
+
+.row-label {
+  margin: 0;
+  color: black;
+}
+
+.app-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 44px;
+  margin-bottom: 10px;
+}
+
+.app-row {
+  .text {
+    padding: 0 20px;
+  }
+}
+
+.app-row .icon {
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.app-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-col .text {
+  padding: 0 20px;
+}
+
+.warning {
+  border-color: #F7BC33;
+}
+
+.warning .icon {
+  background: #F7BC33;
+}
+
+.success {
+  border-color: #56AA54;
+}
+
+.success .text {
+  color: #56AA54;
+}
+
+.success .icon {
+  background: #56AA54;
+}
+
+.danger {
+  border-color: $red;
+}
+
+.danger .text {
+  color: $red;
+}
+
+.danger .icon {
+  background: $red;
+}
+
+.dead {
+  border: none;
+}
+
+.dead .icon {
+  background: #090A0C;
+}
+
+.info-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+}

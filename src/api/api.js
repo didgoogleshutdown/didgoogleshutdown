@@ -1,7 +1,7 @@
-import request from 'superagent'
+// import request from 'superagent'
 import { sortBy } from 'lodash'
 
-const apps = [
+export const apps = [
   {
     "name": "Gmail",
     "popularity": 1,
@@ -322,6 +322,7 @@ export function getDetails (slug) {
   })
 }
 
+/*
 export const login = (credentials) => (
   new Promise( (resolve, reject) => {
     request
@@ -449,3 +450,4 @@ export const postUserEvent = (data) => (
       })
   })
 )
+*/
