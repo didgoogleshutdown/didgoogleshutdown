@@ -3,6 +3,18 @@ import Link from 'gatsby-link'
 
 import './Home-AppList-App.css'
 
+const Label = ({ children }) => (
+  <p
+    style={{
+      fontWeight: 500,
+      fontSize: 20,
+      margin: 0
+    }}
+  >
+    {children}
+  </p>
+)
+
 export default class App extends React.Component {
   static propTypes = {
     data: React.PropTypes.object,
@@ -55,7 +67,7 @@ export default class App extends React.Component {
             <h3
               style={{
                 fontSize: 30,
-                fontWeight: 400,
+                fontWeight: 800,
                 color: 'black'
               }}
             >
@@ -68,7 +80,7 @@ export default class App extends React.Component {
               width: '100%'
             }}
           >
-            <p className="row-label">Status</p>
+            <Label>Status</Label>
             <div className={ this.props.data.status.class || statusClass[status - 1] + ' app-col'}>
               <div
                 style={{
@@ -107,7 +119,7 @@ export default class App extends React.Component {
                 width: '100%'
               }}
             >
-              <p className="row-label">
+              <Label>
                 {'Outlook: '}
                 <span>
                   {outlook == 1 && ' 👍 ' }
@@ -119,7 +131,7 @@ export default class App extends React.Component {
                   { outlook === 2 && 'Sketchy' }
                   { outlook === 3 && 'Days numbered' }
                 </span>
-              </p>
+              </Label>
             </div>
           }
 

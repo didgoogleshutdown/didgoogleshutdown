@@ -28,56 +28,31 @@ export default class Vitals extends React.Component {
     const total = apps.length
 
     return (
-      <div className="container">
+      <div>
         <h2>Google's vital signs</h2>
         <div className="home-vitals">
+        {[0,1,2].map(cat => (
           <Progress
-            progress={ (alive / total) * 100 }
+            key={cat}
+            progress={ [(alive / total) * 100, (dying / total) * 100, (dead / total) * 100][cat] }
             startDegree={60}
             progressWidth={8}
             trackWidth={20}
             cornersWidth={4}
             size={150}
-            fillColor="white"
+            fillColor="transparent"
             trackColor="transparent"
-            progressColor="#56AA54"
+            progressColor={["#56AA54", "#F7BC33", "#E84235"][cat]}
           >
-            <text x="75" y="75" style={{'textAnchor': 'middle'}}>
-              { alive + ' live apps'}
+            <text
+              x="75"
+              y="75"
+              style={{'textAnchor': 'middle', fontWeight: 700}}
+            >
+              { [alive, dying, dead][cat] + [' live apps', ' uncertain', ' dead apps'][cat]}
             </text>
           </Progress>
-
-          <Progress
-            progress={ (dying / total) * 100 }
-            startDegree={60}
-            progressWidth={8}
-            trackWidth={20}
-            cornersWidth={4}
-            size={150}
-            fillColor="white"
-            trackColor="transparent"
-            progressColor="#F7BC33"
-          >
-            <text x="75" y="75" style={{'textAnchor': 'middle'}}>
-              { dying + ' uncertain apps'}
-            </text>
-          </Progress>
-
-          <Progress
-            progress={ (dead / total) * 100 }
-            startDegree={60}
-            progressWidth={8}
-            trackWidth={20}
-            cornersWidth={4}
-            size={150}
-            fillColor="white"
-            trackColor="transparent"
-            progressColor="#E84235"
-          >
-            <text x="75" y="75" style={{'textAnchor': 'middle'}}>
-              { dead + ' dead apps'}
-            </text>
-          </Progress>
+        ))}
         </div>
       </div>
     )
