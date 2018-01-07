@@ -1,9 +1,0 @@
-@import 'base';
-
-.modal-backdrop {
-
-  .modal {
-    display: flex;
-    flex-direction: column;
-  }
-}

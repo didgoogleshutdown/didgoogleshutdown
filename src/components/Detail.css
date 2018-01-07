@@ -1,5 +1,3 @@
-@import 'base';
-
 .detail {
   display: flex;
   flex-direction: column;

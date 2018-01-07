@@ -3,9 +3,6 @@ import Link from 'gatsby-link';
 import Modal from 'react-dumb-modal'
 import Login from './Login'
 
-import './Header.css'
-import './Header-Modal.css'
-
 export default class Header extends React.Component {
   static propTypes = {
     user: React.PropTypes.object,

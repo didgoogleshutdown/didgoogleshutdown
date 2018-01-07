@@ -3,8 +3,6 @@ import { PatternCircles } from '@vx/pattern'
 import { Bar } from '@vx/shape'
 import Background from './Home-Background'
 
-import './Home-MainHero.css'
-
 export default class MainHero extends React.Component {
   render () {
     const strokeWidth = 10
