@@ -1,7 +1,6 @@
-import React from 'react';
-import Link from 'gatsby-link';
+import React from 'react'
+import Link from 'gatsby-link'
 import Modal from 'react-dumb-modal'
-import Login from './Login'
 
 export default class Header extends React.Component {
   static propTypes = {
@@ -9,17 +8,6 @@ export default class Header extends React.Component {
     onLogin: React.PropTypes.func,
     onLogout: React.PropTypes.func,
     onRegister: React.PropTypes.func
-  }
-
-  constructor (props) {
-    super(props)
-    this.state = {
-      showLoginModal: false
-    }
-  }
-
-  toggleLoginModal () {
-    this.setState({ showLoginModal: !this.state.showLoginModal })
   }
 
   render () {
@@ -45,40 +33,8 @@ export default class Header extends React.Component {
             <li>
               <Link to="/about">About</Link>
             </li>
-            {/* this.props.user &&
-              <li
-                className="logout-button"
-                onClick={ this.props.onLogout }
-              >
-                { this.props.user.name } (logout)
-              </li>
-            */}
-            {/* !this.props.user &&
-              <li
-                className="login-button"
-                onClick={ ::this.toggleLoginModal }
-              >
-                Login
-              </li>
-            */}
           </ul>
         </div>
-        {/* (this.state.showLoginModal && !this.props.user) &&
-          <Modal
-            dismiss={ ::this.toggleLoginModal }
-            overlayClassName="modal-backdrop"
-            modalClassName="modal modal-dialog"
-            overlayStyle={{}}
-            modalStyle={{}}
-          >
-            <Login
-              onLogin={ this.props.onLogin }
-              onRegister={ this.props.onRegister }
-              onClose={ ::this.toggleLoginModal }
-              isModal
-            />
-          </Modal>
-        */}
       </div>
     )
   }
