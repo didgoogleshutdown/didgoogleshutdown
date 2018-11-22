@@ -8,7 +8,7 @@ export const apps = [
     "popularity": 1,
     "status": 1,
     "outlook": 1,
-    "description": "While Google has shown some interest [in moving people over to Inbox](http://www.forbes.com/sites/gordonkelly/2015/12/05/google-ending-gmail/), their data-mining, ad-based email service seems pretty stable.",
+    "description": "While Google once showed some interest [in moving people over to Inbox](http://www.forbes.com/sites/gordonkelly/2015/12/05/google-ending-gmail/), their data-mining, ad-based email service seems pretty stable.",
     "slug": "Gmail"
   },
   {
@@ -102,9 +102,9 @@ export const apps = [
   {
     "name": "Inbox",
     "popularity": 2,
-    "status": 1,
-    "outlook": 1,
-    "description": "This somewhat lacking email app is the new replacement for Gmail.",
+    "status": 2,
+    "outlook": 3,
+    "description": "This app from the Gmail team was once thought to be a replacement for Gmail itself. After 4 years online, Google now plans to [shut it down in March 2019.](https://www.androidauthority.com/google-inbox-shutting-down-904074/)",
     "slug": "Inbox"
   },
   {
