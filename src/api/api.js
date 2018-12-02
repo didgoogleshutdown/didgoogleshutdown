@@ -96,7 +96,7 @@ export const apps = [
     "popularity": 2,
     "status": 2,
     "outlook": 3,
-    "description": "After a security breach, Google announced that it would be shutting down its social netowrk Google Plus [in August of 2019(https://www.theverge.com/2018/10/8/17951890/google-plus-shut-down-security-api-change-gmail-android/). The platform never really gained traction outside of niches and was widely regarded as a bad thing when Google rolled it into YouTube's comment system.",
+    "description": "After a security breach, Google announced that it would be shutting down the consumer end of its social netowrk Google Plus in August of 2019. The platform never really gained traction outside of niches and was widely regarded as a bad thing when Google rolled it into YouTube's comment system. The platform will continue to be used in enterprise. Sources: [The Verge](https://www.theverge.com/2018/10/8/17951890/google-plus-shut-down-security-api-change-gmail-android/), [Google](https://www.blog.google/technology/safety-security/project-strobe/)",
     "slug": "Plus"
   },
   {
