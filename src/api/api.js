@@ -181,10 +181,10 @@ export const apps = [
   },
   {
     "name": "Chrome OS",
-    "popularity": 3,
-    "status": 2,
-    "outlook": 3,
-    "description": "Despite a high, often-touted Amazon sales rank, this web-based OS has only grabbed 0.1% of U.S. web traffic. Google has announced Chrome OS efforts will be applied towrds Android, with the press considering this a shut down.",
+    "popularity": 2,
+    "status": 1,
+    "outlook": 1,
+    "description": "Chrome OS dominates in the education sector but has yet to make a meaningful impact in consumer markets. Google appears to be repositioning their stance with tablets, releasing the Pixel Slate and essentially killing Android tablets.",
     "slug": "Chrome-OS"
   },
   {
