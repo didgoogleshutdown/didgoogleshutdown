@@ -308,5 +308,12 @@ export const apps = [
     "status": 2,
     "outlook": 3,
     "description": "Google Hangouts, formerly GChat, is an IM solution that has been embedded in Gmail for a long time and has expanded since. On top of IM, voice calls and video calls through the browser were also touted as a feature. Though it has a reliable userbase, Google has rapidly transitioned away from Hangouts, [first for SMS users](https://www.computerworld.com/article/3184686/android/google-removing-sms-integration-from-hangouts-heres-why.html) and Allo and Duo were created to essentially replace Hangouts for IM and video calling. Rumors are circulating about a consumer-side [shutdown of Hangouts in 2020](https://gizmodo.com/google-may-be-shutting-down-hangouts-for-consumers-some-1830785513), following in the footsteps of Google Plus. Google has said that the new enterprise brandings, Hangouts Meet and Hangouts Chat, will be [available to consumers](https://9to5google.com/2018/12/01/hangouts-chat-meet-consumers/) prior to the shutdown."
+  }, {
+    "name": "Duo",
+    "slug": "Duo",
+    "popularity": 2,
+    "status": 1,
+    "outlook": 1,
+    "description": "Google Duo was announced alongside Allo, and has fared better than its text-based brother. Google has consistently put time into development and advertising money for their FaceTime alternative, though it still seems to be up in the air as to how many people really use it."
   }
 ]
