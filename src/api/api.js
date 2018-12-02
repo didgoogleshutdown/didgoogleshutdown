@@ -53,18 +53,18 @@ export const apps = [
   },
   {
     "name": "Drive",
-    "popularity": 2,
+    "popularity": 1,
     "status": 1,
     "outlook": 1,
-    "description": "This iCloud-like service replaced Google Docs, so is probably doing OK.",
+    "description": "Google Drive is touted as one of the core services of G Suite, so it's doing quite well.",
     "slug": "Drive"
   },
   {
     "name": "Glass",
     "popularity": 2,
     "status": 2,
-    "outlook": 3,
-    "description": "Glass is hard to pin down. It never really left the beta. Google moved the project elsewhere, saying it 'graduated', but most press reported this as a closure.",
+    "outlook": 2,
+    "description": "Initially pushed as a consumer wearable, Glass has been relegated to the enterprise. Google has talked about trying Glass as a consumer product, but nothing concrete has come as a result.",
     "slug": "Glass"
   },
   {
