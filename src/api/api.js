@@ -118,17 +118,17 @@ export const apps = [
   {
     "name": "Picasa",
     "popularity": 2,
-    "status": 2,
+    "status": 3,
     "outlook": 3,
-    "description": "Google announced February 12th that it is shutting down Picasa. \n\n Source: [Times of India](http://timesofindia.indiatimes.com/tech/tech-news/Google-is-shutting-down-Picasa/articleshow/50972397.cms), [Google](http://googlephotos.blogspot.com/2016/02/moving-on-from-picasa.html)",
+    "description": "Google discontinued Picasa in 2016.",
     "slug": "Picasa"
   },
   {
     "name": "Picasa Web Albums",
     "popularity": 2,
-    "status": 2,
+    "status": 3,
     "outlook": 3,
-    "description": "Main page now redirects to Google Plus, copyright date and site design haven't changed since 2011.",
+    "description": "Picasa Web Albums have been merged into Google Photos.",
     "slug": "Picasa-Web-Albums"
   },
   {
