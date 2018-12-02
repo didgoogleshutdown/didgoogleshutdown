@@ -262,9 +262,9 @@ export const apps = [
   {
     "name": "Nest",
     "popularity": 2,
-    "status": 2,
-    "outlook": 3,
-    "description": "After controvery about a harsh corporate culture led by Tony Fadell, and Fadell untlimately stepping down, Nest's workers will be merged with Google. \n \n https://www.theinformation.com/inside-tony-fadells-struggle-to-build-nest?unlock=b218ed",
+    "status": 1,
+    "outlook": 2,
+    "description": "After controvery about a harsh corporate culture led by Tony Fadell, and Fadell untlimately stepping down, Nest was [merged into Alphabet](https://www.theinformation.com/inside-tony-fadells-struggle-to-build-nest?unlock=b218ed). Nest continues to do fine in Google's Home ecosystem.",
     "slug": "Nest"
   }, {
     "name": "Nexus",
