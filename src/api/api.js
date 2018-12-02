@@ -269,9 +269,9 @@ export const apps = [
   }, {
     "name": "Nexus",
     "popularity": 2,
-    "status": 2,
+    "status": 3,
     "outlook": 3,
-    "description": "This line of phone co-designed by Google was perhaps the only usable incarnation of Android for many. After the beloved Nexus 5, Google paradoxically decided to go high-end but teamed up with Huawei. The Nexus 6 line was their most expensive ever but contained numerous hardware issues, making it both slow and easily broken in half using bare hands. Rumours strongly indicate the Nexus brand is dead in favour of 'Pixel' phones, to be announced October 4th.",
+    "description": "This line of phone co-designed by Google was perhaps the only usable incarnation of Android for many. After the beloved Nexus 5, Google paradoxically decided to go high-end but teamed up with Huawei. The Nexus 6 line was their most expensive ever but contained numerous hardware issues, making it both slow and easily broken in half using bare hands. The Nexus 5X and 6P were praised for giving consumers choice, but both had major hardware issues, with 5Xs consistently bootlooping and 6Ps dying long before their batteries hit 0. Google says they have no plans for Nexus, but that it's not out of the question for Nexus to return. The Pixel line of phones serves as Google's new line of phones, and many enthusiasts call the Android One program the 'new Nexus'.",
     "slug": "Nexus"
   }, {
     "name": "Chromebook Pixel",
