@@ -142,9 +142,9 @@ export const apps = [
   {
     "name": "Goo.gl",
     "popularity": 2,
-    "status": 1,
-    "outlook": 2,
-    "description": "Google's URL shortening service. Interface has not been updated to new Plus\/Material design and still uses Google's old serif logo.",
+    "status": 3,
+    "outlook": 3,
+    "description": "Google's URL shortening service was killed. Existing goo.gl links still work, and Google Photos still uses the URL, but no new links can be created. Developers are encouraged to use Firebase and users are told to take their redirect needs elsewhere.",
     "slug": "Googl"
   },
   {
