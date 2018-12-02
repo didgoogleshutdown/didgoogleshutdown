@@ -278,7 +278,7 @@ export const apps = [
     "popularity": 3,
     "status": 3,
     "outlook": 3,
-    "description": "Google's Chrome OS is a lightweight OS consisting of just a browser. The Chromebook Pixel caused some head-scratching as it packed a laptop-grade Intel i7 into an aluminium chassis with a high-DPI display for as much as $1,500. It was quietly removed from sale during it's second generation.",
+    "description": "Google's Chrome OS is a lightweight OS consisting of just a browser. The Chromebook Pixel caused some head-scratching as it packed a laptop-grade Intel i7 into an aluminium chassis with a high-DPI display for as much as $1,500. It was quietly removed from sale during it's second generation, and has been superceded by the Pixel Slate tablet.",
     "slug": "Chromebook-Pixel"
   }, {
     "name": "Android TV",
