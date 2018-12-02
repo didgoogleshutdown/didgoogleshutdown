@@ -294,5 +294,19 @@ export const apps = [
     "status": 2,
     "outlook": 2,
     "description": `Google's self-driving car, another "moonshot" project, has been [scaled back considerably](https://www.theinformation.com/google-scaled-back-self-driving-car-ambitions), and industry experts have noted it's been easily eclipsed by real motor company's own projects. Google recently [spun if off](http://arstechnica.com/cars/2016/12/google-spins-out-self-driving-car-unit-now-called-waymo/) into it's own company, Waymo, likely to reduce it's costs and liabilities.`
+  }, {
+    "name": "Allo",
+    "slug": "Allo",
+    "popularity": 3,
+    "status": 2,
+    "outlook": 3,
+    "description": "Another attempt at messaging, Allo had low support from consumers at launch, causing Google to pour less resources into it. Allo's initial pull was that it was the first place to try Google Assistant. Google has since [told The Verge](https://www.theverge.com/2018/4/19/17253308/google-allo-texting-paused-android-messages) that Allo has been put on hold in favour of developing RCS in Android Messages."
+  }, {
+    "name": "Hangouts",
+    "slug": "Hangouts",
+    "popularity": 2,
+    "status": 2,
+    "outlook": 3,
+    "description": "Google Hangouts, formerly GChat, is an IM solution that has been embedded in Gmail for a long time and has expanded since. On top of IM, voice calls and video calls through the browser were also touted as a feature. Though it has a reliable userbase, Google has rapidly transitioned away from Hangouts, [first for SMS users](https://www.computerworld.com/article/3184686/android/google-removing-sms-integration-from-hangouts-heres-why.html) and Allo and Duo were created to essentially replace Hangouts for IM and video calling. Rumors are circulating about a consumer-side [shutdown of Hangouts in 2020](https://gizmodo.com/google-may-be-shutting-down-hangouts-for-consumers-some-1830785513), following in the footsteps of Google Plus. Google has said that the new enterprise brandings, Hangouts Meet and Hangouts Chat, will be [available to consumers](https://9to5google.com/2018/12/01/hangouts-chat-meet-consumers/) prior to the shutdown."
   }
 ]
