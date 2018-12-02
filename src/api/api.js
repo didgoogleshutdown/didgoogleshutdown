@@ -28,11 +28,11 @@ export const apps = [
     "slug": "Earth"
   },
   {
-    "name": "Youtube",
+    "name": "YouTube",
     "popularity": 1,
     "status": 1,
     "outlook": 1,
-    "description": "Youtube was aquired by Google and still works somewhat independently. While nearly unchallenged in video hosting, YouTube has failed to produce revenue in the order Google expected. Multiple efforts have been made to monetize features, such as movie rentals, a music service and Youtube Red, all with so far little uptake.",
+    "description": "YouTube was aquired by Google and still works somewhat independently. While nearly unchallenged in video hosting, YouTube has failed to produce revenue in the order Google expected. Multiple efforts have been made to monetize features, such as movie rentals, a music service and Youtube Red, all with so far little uptake.",
     "slug": "Youtube"
   },
   {
@@ -48,7 +48,7 @@ export const apps = [
     "popularity": 2,
     "status": 1,
     "outlook": 2,
-    "description": "This outmoded Google service was redesigned fairly recently, suggesting it'll be kept alive. But so did Reader before it was shuttered.",
+    "description": "This outmoded Google service was redesigned fairly recently, suggesting it'll be kept alive, but so did Reader before it was shuttered.",
     "slug": "Blogger"
   },
   {
