@@ -300,14 +300,14 @@ export const apps = [
     "popularity": 3,
     "status": 2,
     "outlook": 3,
-    "description": "Another attempt at messaging, Allo had low support from consumers at launch, causing Google to pour less resources into it. Allo's initial pull was that it was the first place to try Google Assistant. Google has since [told The Verge](https://www.theverge.com/2018/4/19/17253308/google-allo-texting-paused-android-messages) that Allo has been put on hold in favour of developing RCS in Android Messages."
+    "description": "Another attempt at messaging, Allo had low support from consumers at launch, causing Google to pour less resources into it. Allo's initial pull was that it was the first place to try Google Assistant. Google [announced](https://www.blog.google/products/messages/latest-messages-allo-duo-and-hangouts/) that Allo would work through March 2019, with development having stopped earlier in 2018 to focus on development of RCS inside Android Messages."
   }, {
     "name": "Hangouts",
     "slug": "Hangouts",
     "popularity": 2,
     "status": 2,
     "outlook": 3,
-    "description": "Google Hangouts, formerly GChat, is an IM solution that has been embedded in Gmail for a long time and has expanded since. On top of IM, voice calls and video calls through the browser were also touted as a feature. Though it has a reliable userbase, Google has rapidly transitioned away from Hangouts, [first for SMS users](https://www.computerworld.com/article/3184686/android/google-removing-sms-integration-from-hangouts-heres-why.html) and Allo and Duo were created to essentially replace Hangouts for IM and video calling. Rumors are circulating about a consumer-side [shutdown of Hangouts in 2020](https://gizmodo.com/google-may-be-shutting-down-hangouts-for-consumers-some-1830785513), following in the footsteps of Google Plus. Google has said that the new enterprise brandings, Hangouts Meet and Hangouts Chat, will be [available to consumers](https://9to5google.com/2018/12/01/hangouts-chat-meet-consumers/) prior to the shutdown."
+    "description": "Google Hangouts, formerly GChat, is an IM solution that has been embedded in Gmail for a long time and has expanded since. On top of IM, voice calls and video calls through the browser were also touted as a feature. Though it has a reliable userbase, Google has rapidly transitioned away from Hangouts, [first for SMS users](https://www.computerworld.com/article/3184686/android/google-removing-sms-integration-from-hangouts-heres-why.html) and Allo and Duo were created to essentially replace Hangouts for IM and video calling. In late 2018, rumors bega circulating about the shutdown of consumer Hangouts and migration to the previously enterprise-only Hangouts Meet and Chat, which Google [later confirmed](https://www.blog.google/products/messages/latest-messages-allo-duo-and-hangouts/). While Google has not announed an end date for Hangouts, 9to5Google [reports](https://9to5google.com/2018/12/02/google-hangouts-shutting-down/) that it may be in 2020."
   }, {
     "name": "Duo",
     "slug": "Duo",
