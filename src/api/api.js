@@ -315,5 +315,19 @@ export const apps = [
     "status": 1,
     "outlook": 1,
     "description": "Google Duo was announced alongside Allo, and has fared better than its text-based brother. Google has consistently put time into development and advertising money for their FaceTime alternative, though it still seems to be up in the air as to how many people really use it."
+  }, {
+    "name": "Hangouts Meet",
+    "slug": "Hangouts-Meet",
+    "popularity": 3,
+    "status": 1,
+    "outlook": 1,
+    "description": "In an attempt to reuse Hangouts in G Suite, Hangouts Meet was created to streamline the video call experience for G Suite users. Googe actively supports Hangouts Meet, and the app will become available to consumers before the termination of Hangouts. Considering Meet is part of G Suite, it's probably sticking around."
+   }, {
+    "name": "Hangouts Chat",
+    "slug": "Hangouts-Chat",
+    "popularity": 3,
+    "status": 1,
+    "outlook": 1,
+    "description": "Presented as a Slack alternative, Hangouts Chat is meant to replace the instant messaging portion of Hangouts for G Suite users. Though originally meant for the enterprise market, consumers will gain access to Chat before the termination of Hangouts."
   }
 ]
