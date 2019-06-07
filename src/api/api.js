@@ -115,6 +115,14 @@ const apps = [
     "slug": "Sparrow"
   },
   {
+    "name": "Trips",
+    "popularity": 3,
+    "status": 3,
+    "outlook": 3,
+    "description": "Like Trump's and Hoooter's airline efforts, Google Trips was something created by limitless wealth. Unlike those, Google Trips was not an airline. Instead it was an app that told you where to walk. But despite greater capital that likely Hooters and Trump, Trips failed while doing nothing nearly as difficult.",
+    "slug": "Trips"
+  },
+  {
     "name": "Picasa",
     "popularity": 2,
     "status": 2,
