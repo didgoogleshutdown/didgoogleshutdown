@@ -2,6 +2,6 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
   },
-  pathPrefix: "/didgoogleshutdown",
+  pathPrefix: "/",
   plugins: [`gatsby-plugin-react-helmet`],
 }
